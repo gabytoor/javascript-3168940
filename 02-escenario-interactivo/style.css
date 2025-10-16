@@ -1,0 +1,16 @@
+body {
+    background-color: blueviolet;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(89, 210, 170);
+    text-align: center;
+    text-shadow: 2px 2px violet;
+}
+
+#fondo  {
+    text-align: center;
+}
+
+
