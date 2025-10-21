@@ -34,18 +34,19 @@ h1 {
     left: 40px;
     width: 130px;
     height: auto;
-    transition: 0.5s;
-    animation: moverMedusa 3s ease-in-out infinite alternate;
+    /* animation: salto 0.6s ease forwards; */
+    /* transition: 0.5s;  */
+    /* animation: moverMedusa 3s ease-in-out infinite alternate; */
 }
 
-@keyframes moverMedusa {
+/* @keyframes moverMedusa { 
     0% {
         transform: translateY(-20);
     }
     100% {
         transform: translateY(20px);
     }
-}
+}*/
 
 
 #medusa2 {
@@ -54,18 +55,18 @@ h1 {
     left: 200px;
     width: 130px;
     height: auto;
-    transition: 0.5s;
-    animation: moverMedusa_ 3s ease-in-out infinite alternate;
+    /* transition: 0.5s; */
+    /* animation: moverMedusa_ 3s ease-in-out infinite alternate; */
 }
 
-@keyframes moverMedusa_ {
+/* @keyframes moverMedusa_ { 
     0% {
         transform: translateX(-20);
     }
     100% {
         transform: translateX(20px);
     }
-}
+}*/
 
 #medusa3 {
     position: absolute;
@@ -73,8 +74,8 @@ h1 {
     left: 360px;
     width: 130px;
     height: auto;
-    transition: 0.5s;
-    animation: moverMedusa 3s ease-in-out infinite alternate;
+    /* transition: 0.5s; */
+    /* animation: moverMedusa 3s ease-in-out infinite alternate; */
 }
 
 #medusa4 {
@@ -83,8 +84,8 @@ h1 {
     left: 520px;
     width: 130px;
     height: auto;
-    transition: 0.5s;
-    animation: moverMedusa_ 3s ease-in-out infinite alternate;
+    /* transition: 0.5s; */
+    /* animation: moverMedusa_ 3s ease-in-out infinite alternate; */
 }
 
 .desaparecer {
@@ -107,9 +108,14 @@ h1 {
     height: auto;
     transform-origin: center;
     animation: rotarSuave 1.5s infinite ease-in-out alternate;
+    /* animation: rotarSuave 1.5s infinite ease-in-out alternate; */
 }
 
-@keyframes rotarSuave {
+.rotarSuave {
+    animation: rotarSuave 1.5s infinite ease-in-out alternate;
+}
+
+ @keyframes rotarSuave { 
     0% {
         transform: rotate(-20deg);
     }
@@ -124,10 +130,15 @@ h1 {
     left: 200px;
     width: 130px;
     height: auto;
-    animation: moverBurbuja 3s ease-in-out infinite alternate;
+    animation: moverBurbuja 4s linear infinite alternate ;
+    /* animation: moverBurbuja 3s ease-in-out infinite alternate; */
 }
 
-@keyframes moverBurbuja {
+.moverBurbuja {
+    animation: moverBurbuja 4s linear infinite alternate ;
+}
+
+ @keyframes moverBurbuja { 
     0% {
         transform: translateY(0);
     }
@@ -151,4 +162,15 @@ h1 {
 
 #contador.activo {
   transform: scale(1.1);
+}
+
+/* Animación desaparecer medusa */
+.saltar {
+    animation: salto 0.6s ease forwards;
+} 
+
+@keyframes salto {
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(-60px);}
+    100%{transform: translateY(0); opacity: 0;}
 }
