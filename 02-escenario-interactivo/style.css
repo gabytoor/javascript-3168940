@@ -174,3 +174,44 @@ h1 {
     30%{transform: translateY(-60px);}
     100%{transform: translateY(0); opacity: 0;}
 }
+
+
+/* Escenario 2 =================================================================================================================== */
+
+#fondoDos  {
+    background-image: url(./img-esc-2/gravity.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: auto;
+    width: 750px;
+    height: 500px;
+    border: solid 3px violet;
+}
+
+#duende {
+    position: absolute;
+    top: 430px;
+    right: 0px;
+    width: 100px;
+    height: auto;
+}
+
+
+#triangulo {
+    position: absolute;
+    top: 270px;
+    right: 80px;
+    width: 100px;
+    height: auto;
+}
+
+
+#fuego {
+    position: absolute;
+    top: 270px;
+    right: 80px;
+    width: 100px;
+    height: auto;
+}
+
