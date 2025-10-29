@@ -9,11 +9,14 @@
 <body>
 
     
-    <h1>Escenario Interactivo</h1>
+    
 
-    <div id="fondo">
+    <div id="fondo" class="escena activa">
+ <h1>Escenario Interactivo</h1>
+    <div id="contador" >
 
-    <div id="contador">
+       
+        
     Medusas recolectadas: <span id="contador-numero">0</span>
     </div>
 
@@ -28,21 +31,53 @@
 
     </div>
 
-<br>
+
 
 <!-- Esenario 2 ================================================================================================================== -->
 
-<h1>Escenario interactivo 2</h1>
 
-<div id="fondoDos">
+
+<div id="fondoDos" class="escena">
+
+<h1>Escenario interactivo 2</h1>
+<div id="contadorDos">
+
+
+ Personajes atrapados: <span id="contador-personajes">0</span>
+    </div>
 
     <img id="duende" src="./img-esc-2/duende.png" alt="duende">
 
-    <img id="triangulo" src="./img-esc-2/triangulo.png" alt="triangulo">
+    <img id="triangulo" class="personajes"  src="./img-esc-2/triangulo.png" alt="triangulo">
 
-     <img id="fuego" src="./img-esc-2/fuego.png" alt="fuego">
+     <img id="fuego" class="personajes" src="./img-esc-2/fuego.png" alt="fuego">
 
-    
+    <img id="dipper" class="personajes" src="./img-esc-2/dipper.png" alt="dipper">
+
+    <img id="pato" class="personajes" src="./img-esc-2/pato.png" alt="pato">
+
+
+
+
+
+</div>
+
+
+<!-- Esenario 3 ================================================================================================================== -->
+
+
+<div id="fondoTres" class="escena">
+
+<h1>Escenario interactivo 3</h1>
+<div id="contadorTres">
+
+Movimientos realizados: <span id="contador-movimientos">0</span>
+    </div>
+
+    <img id="caracol" src="./img-esc-3/caracol.png" alt="caracol">
+
+<img id="pasto" src="./img-esc-3/pasto.png" alt="pasto">
+<img id="pastoDos" src="./img-esc-3/pasto.png" alt="pasto">
 
 
 
@@ -51,13 +86,20 @@
 
 
 
+<!-- CARRUSEL ==================================================================================== -->
 
 
+ <div class="controles">
+    <button class="anterior">⟨ Anterior</button>
+    <button class="siguiente">Siguiente ⟩</button>
+  </div>
 
-
-
-
-
+  <!-- MINIATURAS -->
+  <div class="galeria">
+    <div class="miniatura miniaturaUno"></div>
+    <div class="miniatura miniaturaDos"></div>
+    <div class="miniatura miniaturaTres"></div>
+  </div>
 
 
     <script src="./index.js"></script>
