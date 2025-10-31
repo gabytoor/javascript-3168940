@@ -129,8 +129,9 @@ siguiente.addEventListener("click", function(){
     mostrarEscena(indice)
 })
 
-miniatura.forEach((mini, i) => {
-  mini.addEventListener("click", () => {
-    mostrarEscena(i); 
+
+miniatura.forEach(function(miniatura, i) {
+  miniatura.addEventListener('click', function () {
+    mostrarEscena(i);
   });
 });
