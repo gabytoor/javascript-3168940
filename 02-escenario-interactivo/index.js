@@ -5,6 +5,7 @@
 const jell = document.querySelectorAll(".jellyfish") //clases
 const tablero = document.querySelector("#contador-numero") //id
 let counter = 0
+let sonidoMedusa = new Audio ("./Sonidos/Medusa.mp3")
 
 console.log(jell, tablero)
 
@@ -13,6 +14,7 @@ console.log(jell, tablero)
 jell.forEach( item => {
     
     item.addEventListener ("click", () => {
+        sonidoMedusa.play();
         item.style.filter = "grayscale(1)"
         item.classList.add("saltar")
         counter++
@@ -27,6 +29,7 @@ jell.forEach( item => {
 const personajes = document.querySelectorAll(".personajes") //clases
 const contadorPersonajes = document.querySelector("#contador-personajes") //id
 let counterDos = 0
+let sonidoDesaparecer = new Audio ("./Sonidos/Dipper.mp3")
 
 personajes.forEach(item => {
 
@@ -38,6 +41,7 @@ personajes.forEach(item => {
 
             
             setTimeout(() => {
+              sonidoDesaparecer.play();
                 item.style.display = "none";
             }, 600);
 
@@ -57,9 +61,11 @@ personajes.forEach(item => {
 const caracol = document.getElementById("caracol");
 const contador = document.getElementById("contador-movimientos"); 
 let clics = 0; 
+let sonidoBabosa = new Audio ("./Sonidos/Babosa.mp3")
 
 caracol.addEventListener("click", function() {
   clics = clics + 1;
+  sonidoBabosa.play();
 
   contador.textContent = clics;
 
@@ -91,6 +97,9 @@ caracol.addEventListener("click", function() {
  const siguiente = document.querySelector(".siguiente")
  const miniatura = document.querySelectorAll(".miniatura")
  let indice = 0
+ let sonidoAntSig = new Audio ("./Sonidos/Ant-sig.mp3")
+ let sonidoMiniatura = new Audio ("./Sonidos/Burbuja.mp3")
+
 
 console.log(escenas)
 console.log(anterior)
@@ -115,6 +124,7 @@ mostrarEscena(0)
 
 anterior.addEventListener("click", function(){
     indice = indice - 1
+    sonidoAntSig.play();
     if(indice < 0){
         indice = escenas.length - 1 
     }
@@ -123,6 +133,7 @@ anterior.addEventListener("click", function(){
 
 siguiente.addEventListener("click", function(){
     indice = indice + 1
+     sonidoAntSig.play();
     if(indice >= escenas.length){
         indice = 0
     }
@@ -132,6 +143,7 @@ siguiente.addEventListener("click", function(){
 
 miniatura.forEach(function(miniatura, i) {
   miniatura.addEventListener('click', function () {
+    sonidoMiniatura.play();
     mostrarEscena(i);
   });
 });
