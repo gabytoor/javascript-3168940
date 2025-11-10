@@ -1,0 +1,34 @@
+.menuContainer {
+    display: flex;
+    align-items: center;
+    background-color: #e1a95f;
+    padding: 10px 40px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    margin-left: 30px; 
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.search {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    margin-left: auto; 
+}
+
+
+/* ============================================================================================ */
+
+
