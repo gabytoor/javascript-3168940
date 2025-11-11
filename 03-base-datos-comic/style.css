@@ -32,3 +32,53 @@
 /* ============================================================================================ */
 
 
+.imgYtexto {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #661d1a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 20px; 
+}
+
+.flyer img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    border: solid;
+}
+
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+
+
+.contenido h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.contenido button {
+    background-color: #e1a95f;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.contenido p {
+
+    color: #662d1a;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
