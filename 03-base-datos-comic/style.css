@@ -18,7 +18,7 @@
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 30px; 
 }
 
 .search {
@@ -27,7 +27,6 @@
     font-weight: 500;
     margin-left: auto; 
 }
-
 
 /* ============================================================================================ */
 
@@ -74,11 +73,65 @@
     font-size: 1rem;
     font-weight: bold;
     width: fit-content;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+button:hover {
+  transform: scale(1.05); /* lo agranda un poco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* añade sombra */
+}
+
 
 .contenido p {
 
     color: #662d1a;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======================================================================================================================= */
+
+.capitulos > h1 {
+  text-align: left;
+  font-size: 2em;
+  color: #662d1a;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+.capitulos .lista-caps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.capitulos .cap {
+  width: 30%;
+  text-align: left;
+  padding: 15px;
+}
+
+.capitulos .cap img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  border: solid #661d1a;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);}
+
+.capitulos .cap h1 {
+  font-size: 20px;
+  color: #661d1a;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+.capitulos .cap p {
+  font-size: 12px;
+  color: #661d1a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
