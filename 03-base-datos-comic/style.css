@@ -135,3 +135,12 @@ img:hover {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
+
+
+
+
+.general { transform-origin: top center;
+    width: 1250px;
+    margin: 0 auto;
+    transform: scale(var(--scale));
+  }
