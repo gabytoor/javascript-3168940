@@ -1,4 +1,4 @@
-let comic =
+  let comic =
 {
   "nombreComic": "Cuerdas del Destino",
   "NumeroCapitulos": 3,
