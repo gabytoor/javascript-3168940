@@ -7,6 +7,33 @@
   "autores": ["Juan Camilo Betancourt", "Brayhan Castillo", "Gabriel Torres"],
   "portadaComic" : "/img/portada.jpg",
   "year" : "2025",
+  "personajes": [
+    {
+      "nombre":"Juanes",
+      "descripcion": "Lorem...",
+      "imagen":"./juanes.png",
+    },
+    {
+      "nombre":"Juanes niño",
+      "descripcion": "Lorem...",
+      "imagen":"./silueta.png",
+    },
+    {
+      "nombre":"Papá",
+      "descripcion": "Lorem...",
+      "imagen":"./silueta.png",
+    },
+    {
+      "nombre":"Mamá",
+      "descripcion": "Lorem...",
+      "imagen":"./silueta.png",
+    },
+    {
+      "nombre":"Mensajero",
+      "descripcion": "Lorem...",
+      "imagen":"./silueta.png",
+    },
+  ],
 
   "capitulos": [
     {

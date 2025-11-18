@@ -1,5 +1,6 @@
 const infoComic = document.querySelector (".info-comic")
 const menuContainer = document.querySelector (".menuContainer")
+const cardPersonajes = document.querySelector(".card-personajes")
 
 console.log ("info-comic")
 
@@ -23,3 +24,15 @@ menuContainer.innerHTML = `
             <p>Ingreso</p>
         </div>
 `
+
+console.log(comic.personajes)
+
+comic.personajes.forEach( char => {
+// Crear elementos dinánicamente con Javasripct
+const div = document.createElement("div")
+div.classList.add("personaje")
+
+
+    console.log(char.nombre)
+    document.body.innerHTML += `<img src="${char.imagen}" widht= "200">`
+});
