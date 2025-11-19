@@ -31,8 +31,11 @@ comic.personajes.forEach( char => {
 // Crear elementos dinánicamente con Javasripct
 const div = document.createElement("div")
 div.classList.add("personaje")
+div.innerHTML = `
+<img src="${char.imagen}" alt="">
+<p>${char.nombre}</p>
+<p>${char.descripcion}</p>
+`
 
-
-    console.log(char.nombre)
-    document.body.innerHTML += `<img src="${char.imagen}" widht= "200">`
+cardPersonajes.appendChild(div)
 });
