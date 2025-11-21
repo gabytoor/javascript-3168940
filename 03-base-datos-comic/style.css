@@ -144,3 +144,53 @@ img:hover {
     margin: 0 auto;
     transform: scale(var(--scale));
   }
+
+
+  /* Tarjetas========================================================================================================================= */
+
+  .card {border: 1px solid #eee;
+  padding: 12px;
+border-radius: 10px;
+background: #e1a95f;
+background-color: #662d1a;
+width: 220px;
+height: 300px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+  color: #662d1a;
+  font-weight: 700;
+}
+
+.card p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 8px;
+}
+
+.card:hover{
+  transform: translateY(4px);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}

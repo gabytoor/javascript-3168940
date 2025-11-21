@@ -1,4 +1,4 @@
-  let comic =
+let comic =
 {
   "nombreComic": "Cuerdas del Destino",
   "NumeroCapitulos": 3,
@@ -7,7 +7,7 @@
   "autores": ["Juan Camilo Betancourt", "Brayhan Castillo", "Gabriel Torres"],
   "portadaComic" : "/img/portada.jpg",
   "year" : "2025",
-  "personajes": [
+    "personajes": [
     {
       "nombre":"Juanes",
       "descripcion": "Niño talentoso y sensible que descubre su pasión por la música. Su vida se ve marcada por una maldición ligada a la guitarra que encuentra, convirtiéndolo en el eje central del misterio.",
@@ -55,46 +55,4 @@
       "descripcion": "...",
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {
-      "name": "Madame Uppercut",
-      "age": 39,
-      "secretIdentity": "Jane Wilson",
-      "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    },
-    {
-      "name": "Eternal Flame",
-      "age": 1000000,
-      "secretIdentity": "Unknown",
-      "powers": [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
-    }
-  ]
-}
+  ]}
