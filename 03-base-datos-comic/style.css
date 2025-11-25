@@ -1,3 +1,5 @@
+/* ============================ MENU ================================== */
+
 .menuContainer {
     display: flex;
     align-items: center;
@@ -12,44 +14,41 @@
 }
 
 .menu {
-    margin-left: 30px; 
+    margin-left: 30px;
 }
 
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .search {
     display: flex;
     gap: 20px;
     font-weight: 500;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
-/* ============================================================================================ */
-
+/* ============================= PORTADA =============================== */
 
 .imgYtexto {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
     padding: 60px 20px;
     background-color: #ffffff;
     color: #661d1a;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .flyer img {
     width: 350px;
     height: auto;
     border-radius: 12px;
-    border: solid;
+    border: solid 2px #661d1a;
 }
-
 
 .contenido {
     display: flex;
@@ -57,7 +56,6 @@
     justify-content: center;
     max-width: 700px;
 }
-
 
 .contenido h1 {
     font-size: 2.2rem;
@@ -77,120 +75,100 @@
 }
 
 button:hover {
-  transform: scale(1.05); /* lo agranda un poco */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* añade sombra */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .contenido p {
-
     color: #662d1a;
-    margin: 0;
+    margin: 0 0 10px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ======================================================================================================================= */
+/* ============================== TITULOS =============================== */
 
-.capitulos > h1 {
-  text-align: left;
-  font-size: 2em;
-  color: #662d1a;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #661d1a;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium';
+}
+
+/* =========================== PERSONAJES =============================== */
+
+.personajes {
+    padding-bottom: 50px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 250px;
+    padding: 1.5rem;
+    background-color: #fff5e6;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #e1a95f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* ============================ CAPÍTULOS =============================== */
+
+.capitulos {
+    margin-top: 50px;
+    padding-bottom: 60px;
 }
 
 .capitulos .lista-caps {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 15px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.capitulos .cap {
-  width: 30%;
-  text-align: left;
-  padding: 15px;
+.cap {
+    background: #e1a95f;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.capitulos .cap img {
-  width: 100%;
-  height: 500px;
-  border-radius: 10px;
-  border: solid #661d1a;
-  transition: transform 0.3s ease;
+.capitulo img {
+    width: 100%;
+    object-fit: cover;
 }
 
-img:hover {
-  transform: scale(1.05);}
-
-.capitulos .cap h1 {
-  font-size: 20px;
-  color: #661d1a;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+.contenidosPorCap {
+    padding: 1.5rem;
+    text-align: center;
 }
 
-.capitulos .cap p {
-  font-size: 12px;
-  color: #661d1a;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+.contenidosPorCap h1 {
+    font-size: 1.7rem;
+    color: #662d1a;
 }
 
-
-
-
-.general { transform-origin: top center;
-    width: 1250px;
-    margin: 0 auto;
-    transform: scale(var(--scale));
-  }
-
-
-  /* Tarjetas========================================================================================================================= */
-
-  .card {border: 1px solid #eee;
-  padding: 12px;
-border-radius: 10px;
-background: #e1a95f;
-background-color: #662d1a;
-width: 220px;
-height: 300px;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-}
-
-
-.card img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.card h3 {
-  font-size: 16px;
-  margin: 5px 0 10px 0;
-  color: #662d1a;
-  font-weight: 700;
-}
-
-.card p{
-  margin: 0;
-  color: var(--muted);
-  font-size: 8px;
-}
-
-.card:hover{
-  transform: translateY(4px);
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 30px;
-  flex-wrap: wrap;
+.contenidosPorCap p {
+    margin: 0;
+    color: #662d1a;
+    font-size: 1rem;
 }

@@ -1,100 +1,102 @@
-  let comic =
-{
-  "nombreComic": "Cuerdas del Destino",
-  "NumeroCapitulos": 3,
-  "genero": "Drama",
-  "sinopsis": "Super tower",
-  "autores": ["Juan Camilo Betancourt", "Brayhan Castillo", "Gabriel Torres"],
-  "portadaComic" : "/img/portada.jpg",
-  "year" : "2025",
-  "personajes": [
+let comic = {
+  nombreComic: "Cuerdas del Destino",
+  NumeroCapitulos: 3,
+  genero: "Drama",
+  sinopsis:
+    "La historia de Juanes, un joven que descubre una guitarra maldita que transforma su vida en un viaje entre la música, la tragedia y un destino que deberá enfrentar.",
+  autores: ["Juan Camilo Betancourt", "Brayhan Castillo", "Gabriel Torres"],
+  portadaComic: "./img/portada.jpg",
+  year: "2025",
+
+  personajes: [
     {
-      "nombre":"Juanes",
-      "descripcion": "Niño talentoso y sensible que descubre su pasión por la música. Su vida se ve marcada por una maldición ligada a la guitarra que encuentra, convirtiéndolo en el eje central del misterio.",
-      "imagen":"./juanes.png",
+      nombre: "Juanes",
+      descripcion:
+        "Niño talentoso y sensible que descubre su pasión por la música. Su vida se ve marcada por una maldición ligada a la guitarra que encuentra.",
+      imagen: "./img/personajes/juanes.png",
     },
     {
-      "nombre":"Papá",
-      "descripcion": "Músico tradicional y guía emocional de Juanes. Le enseña que la música nace del corazón, marcando el inicio de su camino artístico.",
-      "imagen":"./silueta.png",
+      nombre: "Papá",
+      descripcion:
+        "Músico tradicional y guía emocional de Juanes. Le enseña que la música nace del corazón.",
+      imagen: "./img/personajes/silueta.png",
     },
     {
-      "nombre":"Mamá",
-      "descripcion": "Figura protectora y afectuosa. Mantiene unida a la familia en medio de la adversidad y representa la estabilidad emocional del hogar.",
-      "imagen":"./silueta.png",
+      nombre: "Mamá",
+      descripcion:
+        "Figura protectora y afectuosa. Representa la estabilidad del hogar y el vínculo familiar.",
+      imagen: "./img/personajes/silueta.png",
     },
     {
-      "nombre":"Mensajero",
-      "descripcion": "Ser misterioso que revela la existencia de la maldición. Actúa como un mensajero sobrenatural que impulsa a Juanes a enfrentar su destino..",
-      "imagen":"./silueta.png",
+      nombre: "Abuelo",
+      descripcion:
+        "Sabio y cercano a Juanes. Su presencia influye profundamente en la vida espiritual y emocional del protagonista.",
+      imagen: "./img/personajes/silueta.png",
+    },
+    {
+      nombre: "Mensajero",
+      descripcion:
+        "Ser misterioso que revela la existencia de la maldición. Actúa como un guía sobrenatural.",
+      imagen: "./img/personajes/silueta.png",
     },
   ],
 
-  "capitulos": [
+  capitulos: [
     {
-      "id" : 1,
-      "nombre": "El Descubrimiento",
-      "Personajes": ["Juanes", "Abuelo", "Abuela", "Padre", "HermanoUno", "HermanoDos", "HermanoTres", "HermanoCuatro", "HermanoCinco" ],
-      "portada": "./img/portada.jpg",
-      "descripcion": "En una choza perdida junto al río, un niño descubre una misteriosa caja que cambiará su vida. Dentro, una guitarra dormida espera despertar un destino marcado por la música, el misterio y una promesa que lo acompañará para siempre.",
+      id: 1,
+      nombre: "El Descubrimiento",
+      Personajes: [
+        "Juanes",
+        "Abuelo",
+        "Padre",
+        "Mamá",
+        "HermanoUno",
+        "HermanoDos",
+        "HermanoTres",
+        "HermanoCuatro",
+        "HermanoCinco",
+      ],
+      portada: "./img/capitulos/cap1.png",
+      descripcion:
+        "Juanes descubre una misteriosa guitarra que despierta su pasión por la música y un destino que no imagina.",
     },
 
     {
-      "id" : 2,
-      "nombre": "Las Líricas",
-      "Personajes": 29,
-      "portada": "./img/portada.jpg",
-      "descripcion": "...",
+      id: 2,
+      nombre: "Las Líricas",
+      Personajes: [
+        "Juanes",
+        "Abuelo",
+        "Padre",
+        "Mamá",
+        "HermanoUno",
+        "HermanoDos",
+        "HermanoTres",
+        "HermanoCuatro",
+        "HermanoCinco",
+      ],
+      portada: "./img/capitulos/cap2.png",
+      descripcion:
+        "Tras huir de la violencia, Juanes sigue cantando en la ciudad, pero cada nueva canción atrae tragedias hasta descubrir una maldición.",
     },
 
     {
-      "id" : 1,
-      "nombre": "De solución",
-      "Personajes": 29,
-      "portada": "./img/portada.jpg",
-      "descripcion": "...",
+      id: 3,
+      nombre: "De Solución",
+      Personajes: [
+        "Juanes",
+        "Abuelo",
+        "Padre",
+        "Mamá",
+        "HermanoUno",
+        "HermanoDos",
+        "HermanoTres",
+        "HermanoCuatro",
+        "HermanoCinco",
+      ],
+      portada: "./img/capitulos/cap3.png",
+      descripcion:
+        "Un sueño con su abuelo revela el origen de la maldición. Juanes decide enfrentarla para encontrar la libertad.",
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {
-      "name": "Madame Uppercut",
-      "age": 39,
-      "secretIdentity": "Jane Wilson",
-      "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    },
-    {
-      "name": "Eternal Flame",
-      "age": 1000000,
-      "secretIdentity": "Unknown",
-      "powers": [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
-    }
-  ]
-}
+  ],
+};
