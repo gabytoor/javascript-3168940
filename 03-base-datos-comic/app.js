@@ -1,3 +1,5 @@
+import {comic} from "./bd.js"
+
 const infoComic = document.querySelector (".info-comic")
 const menuContainer = document.querySelector (".menuContainer")
 const cardPersonajes = document.querySelector(".card-personajes")
@@ -32,9 +34,11 @@ comic.personajes.forEach( char => {
 const div = document.createElement("div")
 div.classList.add("personaje")
 div.innerHTML = `
+<a href="./personajes.html?id=${char.id}">
 <img src="${char.imagen}" alt="">
 <p>${char.nombre}</p>
 <p>${char.descripcion}</p>
+</a>
 `
 
 cardPersonajes.appendChild(div)

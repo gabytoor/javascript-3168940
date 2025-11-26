@@ -1,4 +1,4 @@
-let comic = {
+export let comic = {
   nombreComic: "Cuerdas del Destino",
   NumeroCapitulos: 3,
   genero: "Drama",
@@ -10,34 +10,39 @@ let comic = {
 
   personajes: [
     {
-      nombre: "Juanes",
-      descripcion:
+      "id" : 1,
+      "nombre": "Juanes",
+      "descripcion" :
         "Niño talentoso y sensible que descubre su pasión por la música. Su vida se ve marcada por una maldición ligada a la guitarra que encuentra.",
-      imagen: "./img/personajes/juanes.png",
+      "imagen" : "./img/personajes/juanes.png",
     },
-    {
-      nombre: "Papá",
-      descripcion:
+    { 
+      "id" : 2,
+      "nombre": "Papá",
+      "descripcion":
         "Músico tradicional y guía emocional de Juanes. Le enseña que la música nace del corazón.",
-      imagen: "./img/personajes/silueta.png",
+      "imagen": "./img/personajes/silueta.png",
     },
     {
-      nombre: "Mamá",
-      descripcion:
+      "id" : 3,
+      "nombre": "Mamá",
+      "descripcion":
         "Figura protectora y afectuosa. Representa la estabilidad del hogar y el vínculo familiar.",
-      imagen: "./img/personajes/silueta.png",
+      "imagen": "./img/personajes/silueta.png",
     },
     {
-      nombre: "Abuelo",
-      descripcion:
+      "id" : 4,
+      "nombre": "Abuelo",
+      "descripcion":
         "Sabio y cercano a Juanes. Su presencia influye profundamente en la vida espiritual y emocional del protagonista.",
-      imagen: "./img/personajes/silueta.png",
+      "imagen": "./img/personajes/silueta.png",
     },
     {
-      nombre: "Mensajero",
-      descripcion:
+      "id" : 5,
+      "nombre": "Mensajero",
+      "descripcion":
         "Ser misterioso que revela la existencia de la maldición. Actúa como un guía sobrenatural.",
-      imagen: "./img/personajes/silueta.png",
+      "imagen": "./img/personajes/silueta.png",
     },
   ],
 
