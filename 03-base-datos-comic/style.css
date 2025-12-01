@@ -1,4 +1,7 @@
 /* ============================ MENU ================================== */
+a{color: #662d1a;
+text-decoration: none;}
+
 
 .menuContainer {
     display: flex;
