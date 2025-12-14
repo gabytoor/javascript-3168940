@@ -1,80 +1,86 @@
-.menuContainer {
-    display: flex;
-    align-items: center;
-    background-color: #e1a95f;
-    padding: 10px 40px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.fade-in {
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
+    transform: scale(0.9);
 }
 
-.logo img {
-    height: 50px;
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-.menu {
-    margin-left: 30px; 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #662d1a;
 }
 
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 30px; 
-}
-
-.search {
-    display: flex;
-    gap: 20px;
-    font-weight: 500;
-    margin-left: auto; 
-}
-
-/* ================================================================================================================== */
-
-.personaje-detalle {
-    width: 100%;
-    text-align: center;
-    padding: 40px 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.titulo-personaje {
-    font-size: 2.8rem;
-    text-align: left;
-    color: #661d1a;
-    margin-bottom: 30px;
-}
-
-.img-personaje img {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 12px;
-    border: 4px solid #661d1a;
-    display: block;
+.informacionPersonaje {
+    max-width: 900px;
     margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.ventana {
+    background-color: #eac28d;
+    border: 2px solid #662d1a;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 40px;
+    animation: fadeInScale 0.8s ease forwards;
+}
+
+.nombre-personaje {
+    text-align: center;
+    font-size: 28px;
+    color: #662d1a;
+    margin-bottom: 20px;
+}
+
+.imagen-personaje {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 260px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .descripcion-personaje {
-    margin-top: 25px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 1.6;
-    color: #662d1a;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #4a2a1c;
     text-align: center;
+    margin-bottom: 25px;
 }
 
-
-
-.video-container {
+.video-personaje {
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    max-width: 500px;
+    border-radius: 16px;
 }
 
-.video-container video {
-    width: 70%;
-    border-radius: 10px;
+.btn-volver {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 22px;
+    background-color: #eac28d;
+    color: #662d1a;
+    border: 2px solid #662d1a;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.btn-volver:hover {
+    background-color: #d9b174;
+    transform: scale(1.05);
 }

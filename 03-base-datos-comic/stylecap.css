@@ -1,103 +1,78 @@
-.menuContainer {
-    display: flex;
-    align-items: center;
-    background-color: #e1a95f;
-    padding: 10px 40px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.menu {
-    margin-left: 30px;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.search {
-    display: flex;
-    gap: 20px;
-    font-weight: 500;
-    margin-left: auto;
-}
-
-
-
-.seccion-capitulos {
-    width: 100%;
-    padding: 40px 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.titulo-cap {
-    font-size: 2.8rem;
-    text-align: left;
-    color: #661d1a;
-    margin-bottom: 50px;
-}
-
-
-.cap-horizontal {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 60px;
-    width: 100%;
-}
-
-.cap-img img {
-    width: 320px;
-    max-width: 100%;
-    border: 4px solid #661d1a;
-    border-radius: 12px;
-}
-
-.cap-texto {
-    width: 100%;
-}
-
-.cap-texto h2 {
-    font-size: 1.8rem;
-    color: #661d1a;
-    margin-bottom: 15px;
-}
-
-.cap-texto p {
-    color: #662d1a;
+body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    max-width: 90%;
+    background-color: #662d1a;
 }
 
+.fade-in {
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
+    transform: scale(0.95);
+}
 
-
-@media (max-width: 768px) {
-    .cap-horizontal {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .cap-texto p {
-        max-width: 100%;
+@keyframes fadeInScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-.video-container {
+.informacionCapitulo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.ventana {
+    background-color: #eac28d;
+    border: 2px solid #662d1a;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 22px;
+    background-color: #eac28d;
+    color: #662d1a;
+    border: 2px solid #662d1a;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.btn-volver:hover {
+    background-color: #d9b174;
+    transform: scale(1.05);
+}
+.nombre-capitulo {
+    text-align: center;
+    color: #662d1a;
+}
+
+.imagen-capitulo {
+    display: block;
+    margin: 20px auto;
+    max-width: 350px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    border-radius: 20px;
 }
 
-.video-container video {
-    width: 70%;
-    border-radius: 10px;
+.descripcion-capitulo,
+.personajes-capitulo {
+    text-align: center;
+    color: #4a2a1c;
+    font-size: 18px;
+    line-height: 1.6;
 }
+
+.video-capitulo {
+    display: block;
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);}

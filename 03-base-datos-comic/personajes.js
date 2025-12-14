@@ -1,38 +1,37 @@
-// "configuración ESModules 2611"
-
 import { comic } from "./bd.js";
 
-const params = new URLSearchParams(window.location.search)
-const id = parseInt(params.get("id"))
+const informacionPersonaje = document.querySelector(".informacionPersonaje");
 
-// Comparar id de URL con id de la base de datos
-const miPersonaje = comic.personajes.find (char => char.id === id);
-
-console.log ("el id del personaje es" + id);
-
-const general = document.querySelector(".general")
-
-console.log(".general")
-
-// hacer el general inner .html                         
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
 
 
-general.innerHTML = `
-<section class="personaje-detalle">
+if (!id) {
+  window.location.href = "index.html";
+}
 
-    <h1 class="titulo-personaje">${miPersonaje.nombre}</h1>
+const personaje = comic.personajes.find(p => p.id == id);
 
-    <div class="img-personaje">
-        <img src="${miPersonaje.img}" alt="${miPersonaje.nombre}">
-    </div>
+if (!personaje) {
+  window.location.href = "index.html";
+}
 
-    <p class="descripcion-personaje">
-        ${miPersonaje.descripcion}
-    </p>
 
-    <div class="video-container">
-        <video src="${miPersonaje.video}" autoplay muted playsinline controls></video>
-    </div>
+const ventana = document.createElement("div");
+ventana.classList.add("ventana", "fade-in");
 
-</section>
+ventana.innerHTML = `
+  <h3 class="nombre-personaje">${personaje.nombre}</h3>
+
+  <img 
+    class="imagen-personaje"
+    src="${personaje.imagen}" 
+    alt="${personaje.nombre}"
+  >
+
+  <p class="descripcion-personaje">
+    ${personaje.descripcion_extensa}
+  </p>
 `;
+
+informacionPersonaje.appendChild(ventana);
